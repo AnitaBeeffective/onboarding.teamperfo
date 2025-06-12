@@ -16,6 +16,110 @@
             border-radius: 4px;
             font-weight: 600;
         }
+        /* Custom styles for the new checklist to match the aesthetic */
+        .checklist-section h3, .practices-section h3 {
+            font-size: 1.5rem; /* 24px */
+            font-weight: 600;
+            color: #4a5568; /* gray-700 */
+            margin-top: 1.5rem; /* 24px */
+            margin-bottom: 1rem; /* 16px */
+            padding-bottom: 0.5rem; /* 8px */
+            border-bottom: 1px solid #e2e8f0; /* gray-200 */
+        }
+        .checklist-section ul, .practices-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .checklist-section li {
+            background-color: #ffffff;
+            margin-bottom: 8px;
+            padding: 12px;
+            border-left: 4px solid #6c36fe;
+            display: flex;
+            align-items: flex-start;
+        }
+        .practices-section ul li {
+             padding-left: 1.5rem;
+             position: relative;
+             margin-bottom: 0.5rem;
+        }
+        .practices-section ul li::before {
+            content: '✅';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .practices-section .sub-list li::before {
+             content: '👉';
+        }
+         .practices-section .reco-list li::before {
+             content: '💡';
+        }
+        .checklist-section input[type="checkbox"] {
+            margin-right: 15px;
+            margin-top: 5px;
+            flex-shrink: 0;
+            transform: scale(1.4);
+        }
+        .checklist-section label {
+            flex: 1;
+        }
+        .checklist-section .warning, .practices-section .warning {
+            background-color: #fce8e6;
+            border-left: 4px solid #d93025;
+            padding: 15px;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #c5221f;
+            border-radius: 6px;
+        }
+         .checklist-section code, .naming-section code, .practices-section code {
+            background-color: #e2e8f0; /* gray-200 */
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9em;
+        }
+        /* Naming convention section styles */
+        .naming-section .table-container {
+            overflow-x: auto;
+            margin-top: 1rem;
+        }
+        .naming-section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .naming-section th, .naming-section td {
+            padding: 0.75rem; /* 12px */
+            border: 1px solid #e2e8f0; /* gray-200 */
+            text-align: left;
+            vertical-align: middle;
+        }
+        .naming-section th {
+            background-color: #f7fafc; /* gray-100 */
+            font-weight: 600;
+            color: #4a5568; /* gray-700 */
+        }
+        .naming-section .level-header {
+            background-color: #6c36fe;
+            color: white;
+            font-weight: 700;
+            text-align: center;
+        }
+        .naming-section .example {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #f1f5f9;
+            border-radius: 6px;
+        }
+        .naming-section .legend {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -26,10 +130,9 @@
             <p class="mt-4 text-lg md:text-xl text-gray-600">Oto kilka informacji o #teamperfo, które musisz wiedzieć na start.</p>
         </header>
 
-
-        <!-- Sekcja: Analityka internetowa - Lista TO DO -->
+        <!-- Sekcja: Analityka - lista TO DO -->
         <section class="checklist-section mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
-            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Szczegółowa Checklista Wdrożeniowa</h2>
+            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Analityka - lista TO DO</h2>
             <p class="mb-6 text-gray-600">Kompleksowa lista zadań do wykonania przy wdrażaniu analityki i narzędzi marketingowych dla nowego projektu.</p>
 
             <h3>Google Tag Manager</h3>
@@ -113,12 +216,30 @@
             </ul>
         </section>
 
-    </div>
+        <!-- Sekcja: Płatności -->
+        <section class="mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
+            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Podpinanie kart do kont reklamowych</h2>
 
-        
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold mb-3">Część 1: Meta Ads (Facebook & Instagram)</h3>
+                <p class="mb-4">Gdy podpinamy naszą firmową kartę, kluczowa jest weryfikacja danych firmowych.</p>
+                <div class="bg-[#ffeb03] border-2 border-black rounded-lg p-4">
+                    <strong class="text-[#6c36fe]">NAJWAŻNIEJSZY KROK:</strong> Po dodaniu karty przejdź do "Informacje o firmie" w ustawieniach płatności i upewnij się, że jako płatnik (Nazwa, Adres, NIP) widnieje <strong>Beeffective</strong>. Jeśli zostawisz dane klienta, faktura zostanie wystawiona na niego, a dla nas będzie bezużyteczna.
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-bold mb-3">Część 2: Google Ads</h3>
+                <p class="mb-4">Proces w Google Ads jest bardziej złożony.</p>
+                 <div class="bg-[#ffeb03] border-2 border-black rounded-lg p-4 mb-4">
+                    <strong class="text-[#6c36fe]">ZASADA NR 1:</strong> NIGDY nie dodawaj po prostu nowej karty do istniejącego profilu płatności klienta. Faktura i tak zostanie wystawiona na właściciela tego profilu.
+                </div>
+            </div>
+        </section>
+
         <!-- Sekcja: Consent Mode -->
         <section class="mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
-            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Consent Mode i Cookiebot – prosto i konkretnie</h2>
+            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Consent Mode i Cookiebot – dobre praktyki</h2>
             
             <div class="space-y-4">
                 <h3 class="text-xl font-bold">Co to jest Consent Mode?</h3>
@@ -132,95 +253,13 @@
                 </ul>
 
                 <h3 class="text-xl font-bold">Z jakiego narzędzia korzystamy?</h3>
-                <p>W naszej agencji korzystamy z <strong>Cookiebota</strong> – platformy, która pozwala łatwo połączyć się z Consent Mode, działa z popularnymi CMS-ami i umożliwia ustawienie popupu na cały ekran.</p>
-
-                <h3 class="text-xl font-bold">Schemat działania Consent Mode z Cookiebotem:</h3>
-                <div class="text-center mt-6">
-                    <div class="flow-step bg-white border-2 border-[#6c36fe] rounded-lg p-4 font-semibold inline-block">[User wchodzi na stronę]</div>
-                    <div class="text-2xl text-[#6c36fe] my-2">⬇️</div>
-                    <div class="flow-step bg-white border-2 border-[#6c36fe] rounded-lg p-4 font-semibold inline-block">[Pojawia się pop-up Cookiebota]</div>
-                    <div class="text-2xl text-[#6c36fe] my-2">⬇️</div>
-                    <div class="flow-step bg-white border-2 border-[#6c36fe] rounded-lg p-4 font-semibold inline-block">[User podejmuje decyzję: ✅ / ❌ / ⚙️]</div>
-                    <div class="text-2xl text-[#6c36fe] my-2">⬇️</div>
-                    <div class="flow-step bg-white border-2 border-[#6c36fe] rounded-lg p-4 font-semibold inline-block">[Cookiebot zapisuje decyzję i przekazuje ją do Google]</div>
-                    <div class="text-2xl text-[#6c36fe] my-2">⬇️</div>
-                    <div class="flow-step bg-white border-2 border-[#6c36fe] rounded-lg p-4 font-semibold inline-block">[Google tagi działają zgodnie z decyzją]</div>
-                </div>
-
-                <h3 class="text-xl font-bold mt-6">Checklista – Consent Mode i Cookiebot</h3>
-                <ul class="list-none p-0 space-y-2">
-                    <li class="flex items-center"><span class="text-2xl text-[#6c36fe] mr-3">⬜</span> Sprawdź, czy strona klienta ma wdrożonego Cookiebota.</li>
-                    <li class="flex items-center"><span class="text-2xl text-[#6c36fe] mr-3">⬜</span> Zweryfikuj integrację Cookiebota z Consent Mode (np. w DevTools).</li>
-                    <li class="flex items-center"><span class="text-2xl text-[#6c36fe] mr-3">⬜</span> Sprawdź ustawienia "Consent Settings" w Google Tag Managerze.</li>
-                    <li class="flex items-center"><span class="text-2xl text-[#6c36fe] mr-3">⬜</span> Zadbaj o odpowiedni wygląd popupu (preferowany pełnoekranowy).</li>
-                    <li class="flex items-center"><span class="text-2xl text-[#6c36fe] mr-3">⬜</span> Poinformuj klienta o konsekwencjach braku zgody.</li>
-                </ul>
+                <p>W Beeffective korzystamy z <strong>Cookiebota</strong> – platformy, która pozwala łatwo połączyć się z Consent Mode, działa z popularnymi CMS-ami i umożliwia ustawienie popupu na cały ekran.</p>
             </div>
         </section>
 
- <!-- Sekcja: Podpinanie płatności do kont reklamowych -->
-        <section class="mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
-            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Podpinanie kart i zarządzanie płatnościami</h2>
-
-            <div class="mb-8">
-                <h3 class="text-2xl font-bold mb-3">Część 1: Meta Ads (Facebook & Instagram)</h3>
-                <p class="mb-4">Gdy podpinamy naszą agencyjną kartę, kluczowa jest weryfikacja danych firmowych.</p>
-                <div class="bg-[#ffeb03] border-2 border-black rounded-lg p-4">
-                    <strong class="text-[#6c36fe]">NAJWAŻNIEJSZY KROK:</strong> Po dodaniu karty przejdź do "Informacje o firmie" w ustawieniach płatności i upewnij się, że jako płatnik (Nazwa, Adres, NIP) widnieje <strong>Beeffective</strong>. Jeśli zostawisz dane klienta, faktura zostanie wystawiona na niego, a dla nas będzie bezużyteczna.
-                </div>
-                <h4 class="text-lg font-bold mt-4 mb-2">Checklista dla Meta Ads:</h4>
-                <ul class="list-none p-0 space-y-2">
-                   <li class="flex items-center"><span class="text-2xl text-[#6c36fe] mr-3">⬜</span> Dodałem/am naszą kartę do konta reklamowego.</li>
-                   <li class="flex items-center"><span class="text-2xl text-[#6c36fe] mr-3">⬜</span> Przeszedłem/am do sekcji "Informacje o firmie".</li>
-                   <li class="flex items-center"><span class="text-2xl text-[#6c36fe] mr-3">⬜</span> Zweryfikowałem/am, że Nazwa, Adres i NIP należą do Beeffective.</li>
-                   <li class="flex items-center"><span class="text-2xl text-[#6c36fe] mr-3">⬜</span> Jeśli dane były nieprawidłowe, zaktualizowałem/am je na nasze.</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="text-2xl font-bold mb-3">Część 2: Google Ads</h3>
-                <p class="mb-4">Proces w Google Ads jest bardziej złożony.</p>
-                 <div class="bg-[#ffeb03] border-2 border-black rounded-lg p-4 mb-4">
-                    <strong class="text-[#6c36fe]">ZASADA NR 1:</strong> NIGDY nie dodawaj po prostu nowej karty do istniejącego profilu płatności klienta. Faktura i tak zostanie wystawiona na właściciela tego profilu.
-                </div>
-                <h4 class="text-lg font-bold mb-2">Prawidłowa procedura:</h4>
-                <ol class="list-decimal list-inside pl-4 space-y-2">
-                    <li><strong>Zidentyfikuj problem:</strong> Sprawdź w "Rozliczenia" -> "Ustawienia", na kogo jest zarejestrowany profil płatności.</li>
-                    <li><strong>Skontaktuj się z Supportem Google Ads:</strong> To kluczowy krok. Poproś o pomoc w zmianie profilu płatności na dane agencji Beeffective.</li>
-                    <li><strong>Cierpliwie współpracuj:</strong> Proces może potrwać 1-2 dni robocze.</li>
-                </ol>
-                 <h4 class="text-lg font-bold mt-4 mb-2">Checklista dla Google Ads:</h4>
-                <ul class="list-none p-0 space-y-2">
-                   <li class="flex items-center"><span class="text-2xl text-[#6c36fe] mr-3">⬜</span> Sprawdziłem/am, na kogo zarejestrowany jest obecny profil płatności.</li>
-                   <li class="flex items-center"><span class="text-2xl text-[#6c36fe] mr-3">⬜</span> Zainicjowałem/am proces zmiany profilu płatności na profil Beeffective.</li>
-                   <li class="flex items-center"><span class="text-2xl text-[#6c36fe] mr-3">⬜</span> Skontaktowałem/am się z supportem Google Ads.</li>
-                   <li class="flex items-center"><span class="text-2xl text-[#6c36fe] mr-3">⬜</span> Otrzymałem/am potwierdzenie, że płatnikiem jest teraz Beeffective.</li>
-                </ul>
-            </div>
-        </section>
-
-    
-        <!-- Sekcja: Narzędzia AI -->
-        <section class="mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
-            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">ChatGPT i inne narzędzia AI – dobre praktyki</h2>
-            <p class="mb-4">W agencji korzystamy m.in. z <strong>ChatGPT</strong>, <strong>Gemini</strong> oraz <strong>NotebookLM</strong>. Pamiętaj, AI to super wsparcie, ale nie jest nieomylne.</p>
-            
-            <h3 class="text-xl font-bold mb-3">Dobre praktyki:</h3>
-            <ul class="list-disc list-inside pl-4 space-y-2">
-                <li><strong>Weryfikuj treści:</strong> AI potrafi "zmyślać" (tzw. halucynacje). Zawsze sprawdzaj dane i źródła.</li>
-                <li><strong>Zadbaj o język i ton:</strong> Przepisz tekst, aby brzmiał naturalnie, a nie jak sztuczny twór AI.</li>
-                <li><strong>Popraw wielkie litery:</strong> AI nadużywa wielkich liter w języku polskim. Poprawiaj to.</li>
-                <li><strong>Unikaj przesady:</strong> Ogranicz entuzjazm i wykrzykniki, jeśli nie pasują do kontekstu.</li>
-                <li><strong>Nie kopiuj 1:1:</strong> Traktuj AI jako asystenta, nie gotowe rozwiązanie.</li>
-                <li><strong>Dawaj kontekst:</strong> Im lepsze dane wejściowe, tym lepszy wynik.</li>
-                <li><strong>Sprawdzaj zgodność z briefem:</strong> Upewnij się, że AI nie zignorowało części założeń.</li>
-            </ul>
-        </section>
-        
-
-        <!-- NOWA SEKCJA: Dobre praktyki w tworzeniu kampanii reklamowych  -->
+        <!-- Sekcja: Dobre Praktyki -->
         <section class="practices-section mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
-            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Dobre Praktyki i Ustawienia Techniczne</h2>
+            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Dobre praktyki w ustawianiu reklam Meta Ads i Google Ads</h2>
             
             <div class="mb-12">
                 <h3 class="text-2xl font-bold text-gray-800">Tworzenie kampanii w Google Ads</h3>
@@ -300,10 +339,10 @@
             </div>
         </section>
 
-  <!-- SEKCJA: Struktura Nazewnictwa -->
+        <!-- SEKCJA: Struktura Nazewnictwa -->
         <section class="naming-section mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
-            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Struktura Nazewnictwa i Tagowanie Linków</h2>
-            <p class="mb-6 text-gray-600">Spójne nazewnictwo to fundament porządku. Umożliwia szybką analizę, filtrowanie i raportowanie. Poniżej znajduje się obowiązujący w agencji standard dla kampanii i linków UTM.</p>
+            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Struktura nazewnictwa kampanii i tagowanie linków UTM</h2>
+            <p class="mb-6 text-gray-600">Spójne nazewnictwo to fundament porządku. Umożliwia szybką analizę, filtrowanie i raportowanie. Poniżej znajduje się obowiązujący w Beeffective standard dla kampanii i linków UTM.</p>
             
             <div class="mb-12">
                 <h3 class="text-2xl font-bold text-gray-800 mb-4">Meta Ads (Facebook) - Naming Kampanii</h3>
@@ -314,7 +353,7 @@
                                 <th colspan="5">Poziom Kampanii</th>
                             </tr>
                             <tr>
-                                <th>Wyróżnik Agencyjny</th>
+                                <th>Wyróżnik Firmowy</th>
                                 <th>Etap Lejka</th>
                                 <th>Typ Ruchu</th>
                                 <th>Rodzaj Kampanii</th>
@@ -405,11 +444,26 @@
             </div>
         </section>
 
-
-    
-        <!-- Sekcja: Inne narzędzia, z których korzystamy i które ułatwiają nam pracę -->
+        <!-- Sekcja: Narzędzia AI -->
         <section class="mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
-            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Narzędzia wykorzystywane w Beeffective</h2>
+            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Dobre praktyki korzystania z AI</h2>
+            <p class="mb-4">W Beeffective korzystamy m.in. z <strong>ChatGPT</strong>, <strong>Gemini</strong> oraz <strong>NotebookLM</strong>. Pamiętaj, AI to super wsparcie, ale nie jest nieomylne.</p>
+            
+            <h3 class="text-xl font-bold mb-3">Dobre praktyki:</h3>
+            <ul class="list-disc list-inside pl-4 space-y-2">
+                <li><strong>Weryfikuj treści:</strong> AI potrafi "zmyślać" (tzw. halucynacje). Zawsze sprawdzaj dane i źródła.</li>
+                <li><strong>Zadbaj o język i ton:</strong> Przepisz tekst, aby brzmiał naturalnie, a nie jak sztuczny twór AI.</li>
+                <li><strong>Popraw wielkie litery:</strong> AI nadużywa wielkich liter w języku polskim. Poprawiaj to.</li>
+                <li><strong>Unikaj przesady:</strong> Ogranicz entuzjazm i wykrzykniki, jeśli nie pasują do kontekstu.</li>
+                <li><strong>Nie kopiuj 1:1:</strong> Traktuj AI jako asystenta, nie gotowe rozwiązanie.</li>
+                <li><strong>Dawaj kontekst:</strong> Im lepsze dane wejściowe, tym lepszy wynik.</li>
+                <li><strong>Sprawdzaj zgodność z briefem:</strong> Upewnij się, że AI nie zignorowało części założeń.</li>
+            </ul>
+        </section>
+
+        <!-- Sekcja: Narzędzia -->
+        <section class="mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
+            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Inne narzędzia wykorzystywane w Beeffective</h2>
             <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse">
                     <thead>
@@ -449,7 +503,7 @@
         </section>
         
         <!-- Sekcja: Podcasty -->
-        <section class="p-6 border border-gray-200 rounded-lg bg-gray-50">
+        <section class="mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
             <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Polecane podcasty marketingowe</h2>
             <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse">
