@@ -26,6 +26,96 @@
             <p class="mt-4 text-lg md:text-xl text-gray-600">Oto kilka informacji o #teamperfo, które musisz wiedzieć na start.</p>
         </header>
 
+
+        <!-- Sekcja: Analityka internetowa - Lista TO DO -->
+        <section class="checklist-section mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
+            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Szczegółowa Checklista Wdrożeniowa</h2>
+            <p class="mb-6 text-gray-600">Kompleksowa lista zadań do wykonania przy wdrażaniu analityki i narzędzi marketingowych dla nowego projektu.</p>
+
+            <h3>Google Tag Manager</h3>
+            <ul>
+                <li><input type="checkbox" id="ztm1"><label for="ztm1">Założenie konta i nadanie dostępów.</label></li>
+                <li><input type="checkbox" id="ztm2"><label for="ztm2">Utworzenie kontenera i nadanie dostępów (wymagane uprawnienie publikacji).</label></li>
+                <li><input type="checkbox" id="ztm3"><label for="ztm3">Przesłanie kodów do implementacji do klienta w pliku .txt (opcjonalnie: przesłanie identyfikatora kontenera, jeśli CMS umożliwia łatwiejszą implementację GTM-a).</label></li>
+                <li><input type="checkbox" id="ztm4"><label for="ztm4">Sprawdzenie poprawności implementacji kodu GTM z wtyczką Tag Assistant Legacy.</label></li>
+            </ul>
+
+            <h3>Implementacja Consent Mode</h3>
+            <ul>
+                <li><input type="checkbox" id="zcm1"><label for="zcm1">Implementacja Consent Mode zgodnie z <a href="https://docs.google.com/document/d/1MY2lOx-1MVksxMChaLpagvu7xwtwKAnazA7cLXQz6d4/edit" target="_blank" class="text-[#6c36fe] hover:underline">oficjalną instrukcją</a>.</label></li>
+            </ul>
+            
+            <h3>Implementacja Google Analytics 4</h3>
+            <ul>
+                <li><input type="checkbox" id="zga1"><label for="zga1">Założenie konta Google Analytics dla strony, z uwzględnieniem poprawnego adresu URL (https).</label></li>
+                <li><input type="checkbox" id="zga2"><label for="zga2">Udostępnienie zasobów do implementacji na stronie: Poprzez GTM - identyfikator pomiaru (dostępny w strumieniach danych w Ustawieniach) lub poprzez umieszczenie kodu dostępnego w strumieniach danych.</label></li>
+                <li><input type="checkbox" id="zga3"><label for="zga3">Sprawdzenie poprawności implementacji kodu Google Analytics na stronie poprzez Tag Assistant Legacy.</label></li>
+                <li><input type="checkbox" id="zga4"><label for="zga4">Nadanie dostępów dla innych użytkowników.</label></li>
+                <li><input type="checkbox" id="zga5"><label for="zga5">Wdrożenie Google Signals.</label></li>
+                <li><input type="checkbox" id="zga6"><label for="zga6">Aktywacja ustawień zgód marketingowych.</label></li>
+                <li><input type="checkbox" id="zga7"><label for="zga7">Zmiana czasu przechowywania danych z 2 na 14 miesięcy.</label></li>
+                <li><input type="checkbox" id="zga8"><label for="zga8">Wykluczenie wewnętrznego IP.</label></li>
+                <li><input type="checkbox" id="zga9"><label for="zga9">Przesłanie listy niechcianych witryn odsyłających.</label></li>
+                <li><input type="checkbox" id="zga10"><label for="zga10">W przypadku e-commerce wdrożenie warstwy danych - po stronie klienta. Jeśli jest strona na Wordpressie, wówczas możemy to zrobić sami korzystając z wtyczki GTM4WP Thomasa Geigera.</label></li>
+                <li><input type="checkbox" id="zga11"><label for="zga11">Utworzenie niezbędnych eventów (na podstawie zdarzeń warstwy danych lub przez inne triggery dostępne w GTM-ie).</label></li>
+                <li><input type="checkbox" id="zga12"><label for="zga12">Sprawdzenie poprawności wdrożenia tagów w Tag Assistant.</label></li>
+                <li><input type="checkbox" id="zga13"><label for="zga13">Przesłanie zmian na produkcję - opublikowanie zmian w kontenerze.</label></li>
+                <li><input type="checkbox" id="zga14"><label for="zga14">Utworzenie niezbędnych raportów w sekcji Eksploracja.</label></li>
+            </ul>
+
+            <h3>Business Manager Meta Ads</h3>
+            <ul>
+                <li><input type="checkbox" id="zmeta1"><label for="zmeta1">Utworzenie Menedżera Firmy dla strony na FB.</label></li>
+                <li><input type="checkbox" id="zmeta2"><label for="zmeta2">Z poziomu Menedżera Firmy utworzenie konta reklamowego i ustawienie poprawnej strefy czasowej.</label></li>
+                <li><input type="checkbox" id="zmeta3"><label for="zmeta3">Powiązanie Menedżera Firmy z Fanpage'em.</label></li>
+                <li><input type="checkbox" id="zmeta4"><label for="zmeta4">Uzupełnienie danych w koncie reklamowym: Dane firmy, która zasila budżet i dodanie poprawnej karty płatniczej.</label></li>
+                <li><input type="checkbox" id="zmeta5"><label for="zmeta5">Uzupełnienie informacji w <a href="https://docs.google.com/spreadsheets/d/1CDLOjLG7u_hu0xBKJLusQeb2LrffEuLShIKFpMqGimw/edit#gid=0" target="_blank" class="text-[#6c36fe] hover:underline">dedykowanym arkuszu Sheets</a>.</label></li>
+                <li><input type="checkbox" id="zmeta6"><label for="zmeta6">Nadanie dostępów użytkownikom.</label></li>
+                <li><input type="checkbox" id="zmeta7"><label for="zmeta7">Utworzenie Pixela Meta Ads <strong>przez GTM-a!</strong> (to ważne w kontekście wdrażania consent mode’a!).</label></li>
+                <li><input type="checkbox" id="zmeta8"><label for="zmeta8">Wdrożenie przez GTM-a zdarzeń standardowych META Ads (zgodnie z oficjalną dokumentacją Facebooka).</label></li>
+                <li><input type="checkbox" id="zmeta9"><label for="zmeta9">Wdrożenie przez GTM-a zdarzeń niestandardowych META Ads poprzez kod w tagu "niestandardowy HTML":<br><code>&lt;script&gt;fbq('trackCustom', 'Nazwa_Eventu');&lt;/script&gt;</code></label></li>
+                <li><input type="checkbox" id="zmeta10"><label for="zmeta10">Sprawdzenie poprawności wdrożenia zdarzeń: Tag Assistant i Meta Pixel Helper.</label></li>
+                <li><input type="checkbox" id="zmeta11"><label for="zmeta11">Utworzenie grup remarketingowych i lookalike Meta.</label></li>
+                <li><input type="checkbox" id="zmeta12"><label for="zmeta12">Sprawdzenie danych do faktury. (Gdy konto zasilane jest przez Beeffective, należy sprawdzić czy podane są dane Tomka + NIP. Jeśli konto zasilane jest przez klienta, również należy zweryfikować dane.)</label></li>
+            </ul>
+
+            <h3>Campaign Manager LinkedIn</h3>
+            <ul>
+                <li><input type="checkbox" id="zli1"><label for="zli1">Utworzenie Menedżera Kampanii na LinkedIn i powiązanie z kontem.</label></li>
+                <li><input type="checkbox" id="zli2"><label for="zli2">Nadanie odpowiednich dostępów (w tym Menedżera ds. rozliczeń).</label></li>
+                <li><input type="checkbox" id="zli3"><label for="zli3">Utworzenie Insight Tag (zobacz: <a href="https://www.beeffective.pl/wykorzystuj-linkedin-insight-tag/" target="_blank" class="text-[#6c36fe] hover:underline">instrukcja</a>).</label></li>
+                <li><input type="checkbox" id="zli4"><label for="zli4">Zdefiniowanie zdarzeń konwersji w event makerze LinkedIna (lub przez GTM z tagiem "niestandardowy HTML").</label></li>
+                <li><input type="checkbox" id="zli5"><label for="zli5">Sprawdzenie poprawności wdrożenia w Tag Assistant.</label></li>
+            </ul>
+
+            <h3>Google Ads</h3>
+            <ul>
+                <li><input type="checkbox" id="zgads1"><label for="zgads1">Utworzenie konta Google Ads, uzupełnienie danych i powiązanie z MCK.</label></li>
+                <li><input type="checkbox" id="zgads2"><label for="zgads2">Utworzenie profilu płatności i uzupełnienie informacji w arkuszu Sheets nt. karty.</label></li>
+                <li><input type="checkbox" id="zgads3"><label for="zgads3">Połączenie z Google Analytics i YouTube w sekcji "Połączone Konta".</label></li>
+                <li><input type="checkbox" id="zgads4"><label for="zgads4">Sprawdzenie danych do faktury. (Gdy konto zasilane jest przez Beeffective, należy sprawdzić czy podane są dane Tomka + NIP. Jeśli konto zasilane jest przez klienta, również należy zweryfikować dane.)</label></li>
+                <li><input type="checkbox" id="zgads5"><label for="zgads5">Utworzenie zdarzeń konwersji: tworzymy je w Google Ads, a następnie w GTM tworzymy tagi z ID i etykietą konwersji.</label></li>
+                <li><input type="checkbox" id="zgads6"><label for="zgads6">Sprawdzenie działania tagów w Tag Assistant.</label></li>
+                <li><input type="checkbox" id="zgads7"><label for="zgads7">Kategoryzacja konwersji na: podstawowe (leady, zakupy) i dodatkowe (pozostałe, do nauki strategii).</label></li>
+            </ul>
+            <div class="warning">
+                <strong>UWAGA!</strong> Jeśli podpięta będzie karta Beeffective, należy zmienić <strong>PROFIL PŁATNOŚCI</strong> na Beeffective. Jest to BARDZO WAŻNE!!!
+            </div>
+
+            <h3>Google Merchant Center</h3>
+            <ul>
+                <li><input type="checkbox" id="zgmc1"><label for="zgmc1">Założenie konta GMC na nowym koncie Google.</label></li>
+                <li><input type="checkbox" id="zgmc2"><label for="zgmc2">Zgłoszenie praw do domeny i weryfikacja (metatag lub GTM).</label></li>
+                <li><input type="checkbox" id="zgmc3"><label for="zgmc3">Wybór programów do przystąpienia.</label></li>
+                <li><input type="checkbox" id="zgmc4"><label for="zgmc4">Przesłanie feedu produktowego (prosimy klienta o link).</label></li>
+                <li><input type="checkbox" id="zgmc5"><label for="zgmc5">Wybór częstotliwości i pory przesyłania danych o produktach.</label></li>
+                <li><input type="checkbox" id="zgmc6"><label for="zgmc6">Połączenie konta GMC z Google Ads i Google Analytics.</label></li>
+            </ul>
+        </section>
+
+    </div>
+
+        
         <!-- Sekcja: Consent Mode -->
         <section class="mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
             <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Consent Mode i Cookiebot – prosto i konkretnie</h2>
@@ -67,25 +157,8 @@
                 </ul>
             </div>
         </section>
-        
-        <!-- Sekcja: Narzędzia AI -->
-        <section class="mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
-            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">ChatGPT i inne narzędzia AI – dobre praktyki</h2>
-            <p class="mb-4">W agencji korzystamy m.in. z <strong>ChatGPT</strong>, <strong>Gemini</strong> oraz <strong>NotebookLM</strong>. Pamiętaj, AI to super wsparcie, ale nie jest nieomylne.</p>
-            
-            <h3 class="text-xl font-bold mb-3">Dobre praktyki:</h3>
-            <ul class="list-disc list-inside pl-4 space-y-2">
-                <li><strong>Weryfikuj treści:</strong> AI potrafi "zmyślać" (tzw. halucynacje). Zawsze sprawdzaj dane i źródła.</li>
-                <li><strong>Zadbaj o język i ton:</strong> Przepisz tekst, aby brzmiał naturalnie, a nie jak sztuczny twór AI.</li>
-                <li><strong>Popraw wielkie litery:</strong> AI nadużywa wielkich liter w języku polskim. Poprawiaj to.</li>
-                <li><strong>Unikaj przesady:</strong> Ogranicz entuzjazm i wykrzykniki, jeśli nie pasują do kontekstu.</li>
-                <li><strong>Nie kopiuj 1:1:</strong> Traktuj AI jako asystenta, nie gotowe rozwiązanie.</li>
-                <li><strong>Dawaj kontekst:</strong> Im lepsze dane wejściowe, tym lepszy wynik.</li>
-                <li><strong>Sprawdzaj zgodność z briefem:</strong> Upewnij się, że AI nie zignorowało części założeń.</li>
-            </ul>
-        </section>
-        
-        <!-- Sekcja: Płatności -->
+
+ <!-- Sekcja: Podpinanie płatności do kont reklamowych -->
         <section class="mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
             <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Podpinanie kart i zarządzanie płatnościami</h2>
 
@@ -126,7 +199,215 @@
             </div>
         </section>
 
-        <!-- Sekcja: Narzędzia -->
+    
+        <!-- Sekcja: Narzędzia AI -->
+        <section class="mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
+            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">ChatGPT i inne narzędzia AI – dobre praktyki</h2>
+            <p class="mb-4">W agencji korzystamy m.in. z <strong>ChatGPT</strong>, <strong>Gemini</strong> oraz <strong>NotebookLM</strong>. Pamiętaj, AI to super wsparcie, ale nie jest nieomylne.</p>
+            
+            <h3 class="text-xl font-bold mb-3">Dobre praktyki:</h3>
+            <ul class="list-disc list-inside pl-4 space-y-2">
+                <li><strong>Weryfikuj treści:</strong> AI potrafi "zmyślać" (tzw. halucynacje). Zawsze sprawdzaj dane i źródła.</li>
+                <li><strong>Zadbaj o język i ton:</strong> Przepisz tekst, aby brzmiał naturalnie, a nie jak sztuczny twór AI.</li>
+                <li><strong>Popraw wielkie litery:</strong> AI nadużywa wielkich liter w języku polskim. Poprawiaj to.</li>
+                <li><strong>Unikaj przesady:</strong> Ogranicz entuzjazm i wykrzykniki, jeśli nie pasują do kontekstu.</li>
+                <li><strong>Nie kopiuj 1:1:</strong> Traktuj AI jako asystenta, nie gotowe rozwiązanie.</li>
+                <li><strong>Dawaj kontekst:</strong> Im lepsze dane wejściowe, tym lepszy wynik.</li>
+                <li><strong>Sprawdzaj zgodność z briefem:</strong> Upewnij się, że AI nie zignorowało części założeń.</li>
+            </ul>
+        </section>
+        
+
+        <!-- NOWA SEKCJA: Dobre praktyki w tworzeniu kampanii reklamowych  -->
+        <section class="practices-section mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
+            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Dobre Praktyki i Ustawienia Techniczne</h2>
+            
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-800">Tworzenie kampanii w Google Ads</h3>
+                
+                <h4 class="text-xl font-semibold mt-6 mb-3">Wykluczenie brandu – dokładnie i skutecznie</h4>
+                <p class="mb-4 text-gray-700">Jeśli masz osobną kampanię na brand, wyklucz brand z pozostałych kampanii, aby nie zaburzać wyników innych kampanii i nie przepłacać za ruch, który i tak przyjdzie dzięki kampanii brandowej.</p>
+                <p class="font-bold text-gray-600">Co dokładnie wykluczyć:</p>
+                <ul>
+                    <li><code>[nazwa firmy]</code> – dopasowanie ścisłe</li>
+                    <li><code>"nazwa firmy"</code> – dopasowanie do wyrażenia</li>
+                    <li>Różne warianty i literówki</li>
+                </ul>
+                <p class="font-bold text-gray-600 mt-4">Gdzie dodać:</p>
+                <p class="text-gray-700">W kampanii: <code>Słowa kluczowe → Wykluczające słowa kluczowe</code> lub w <code>Zasobach wspólnych → Listy wykluczeń</code> na poziomie konta.</p>
+
+                <h4 class="text-xl font-semibold mt-6 mb-3">Wyklucz aplikacje z GDN</h4>
+                <p class="mb-4 text-gray-700">Kampanie GDN domyślnie pokazują reklamy w aplikacjach mobilnych – to często przepalanie budżetu. Wyklucz je, dodając w <code>Zarządzaniu miejscami docelowymi</code> placement: <code>mobileappcategory::69500</code>.</p>
+
+                <h4 class="text-xl font-semibold mt-6 mb-3">Zasoby reklam – zawsze kompletne</h4>
+                <p class="mb-4 text-gray-700">Zawsze wypełniaj wszystkie możliwe zasoby reklamowe, ponieważ Google wykorzystuje je do dynamicznych kombinacji, a reklamy z pełnym zestawem mają wyższy Ad Strength i zasięg. 📌 Pamiętaj też, że warto testować różne warianty – sprzedażowe, informacyjne, emocjonalne.</p>
+                <p class="font-bold text-gray-600">Co trzeba uzupełnić:</p>
+                <ul>
+                    <li><strong>Nagłówki:</strong> min. 5, najlepiej 8–10 (różnorodne, bez powtórzeń).</li>
+                    <li><strong>Teksty reklamy (opisowe):</strong> min. 2, najlepiej 4.</li>
+                    <li><strong>Końcowy URL:</strong> dokładna podstrona, nie zawsze strona główna.</li>
+                    <li><strong>Ścieżki wyświetlania:</strong> dodaj np. „promocje”, „sukienki-lato”.</li>
+                    <li><strong>Zasoby graficzne (dla PMax i GDN):</strong> zdjęcia, logo, filmy.</li>
+                </ul>
+                
+                <h4 class="text-xl font-semibold mt-6 mb-3">Dodatkowe rzeczy do ogarnięcia:</h4>
+                <ul class="sub-list">
+                    <li><strong>Rozszerzenia reklam (Assets):</strong> Sitelinki (minimum 4), Objaśnienia, Ceny, Promocje, Lokalizacja – jeśli pasują.</li>
+                    <li><strong>Lokalizacja i język:</strong> Język zawsze polski + angielski. Lokalizacja: „osoby obecne w lokalizacji”.</li>
+                    <li><strong>Konwersje:</strong> Sprawdź, czy działają i są przypisane do kampanii. Zweryfikuj poprawność zdarzeń GA4 / GTM.</li>
+                    <li><strong>Harmonogram reklam:</strong> Ustaw, jeśli kampania działa tylko w określonych godzinach.</li>
+                    <li><strong>Budżet i strategia stawek:</strong> Startuj z Max. liczba kliknięć (z limitem CPC) lub Max. liczba konwersji. Po zebraniu danych przejdź na Docelowy CPA lub ROAS.</li>
+                    <li><strong>Przemyślane grupy reklam:</strong> 1 grupa = 1 intencja / segment. Stosuj jasne i czytelne nazwy.</li>
+                </ul>
+
+                <h4 class="text-xl font-semibold mt-6 mb-3">Rekomendacje performance managera:</h4>
+                <ul class="reco-list">
+                    <li><strong>Nazewnictwo:</strong> Stosuj jasny schemat (np. <code>Typ | Produkt | Match type | Data</code>).</li>
+                    <li><strong>Listy odbiorców:</strong> Dodawaj do obserwacji np. osoby, które kupiły w ostatnich 30 dniach.</li>
+                    <li><strong>Search Terms:</strong> Codziennie monitoruj i wykluczaj nietrafione zapytania.</li>
+                    <li><strong>Urządzenia i sieci:</strong> Oceń skuteczność na desktop vs mobile, wyłącz sieć partnerską.</li>
+                    <li><strong>PMax z głową:</strong> Używaj dopracowanego feedu (GTIN, tytuły, zdjęcia), własnych filmów i osobnych grup zasobów.</li>
+                </ul>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-gray-800">Meta Ads – dobre praktyki i wskazówki</h3>
+
+                <h4 class="text-xl font-semibold mt-6 mb-3">Umiejscowienia reklam – bądź selektywny</h4>
+                <p class="mb-2 text-gray-700"><strong>Promujesz post z fanpage’a?</strong> Jeśli tak, wyłącz Instagram i zostaw tylko Facebook Feed. Treść jest zazwyczaj dopasowana do FB i może wyglądać nienaturalnie na IG.</p>
+                <p class="mb-2 text-gray-700"><strong>Zawsze dostosuj grafikę:</strong> Stories = pionowe 9:16, Feed = kwadrat lub poziom.</p>
+                <p class="mb-4 text-gray-700"><strong>Audience Network – z uwagą:</strong> W większości przypadków wyłączamy to umiejscowienie. Możesz je zostawić na początku i sprawdzić w raporcie, czy przynosi efekty. 📌 Jeśli generuje wydatki bez konwersji → wyłącz.</p>
+
+                <h4 class="text-xl font-semibold mt-6 mb-3">Wyłącz ulepszenia reklam (Ad Enhancements)</h4>
+                <p class="mb-4 text-gray-700">W szczególności ulepszenia tekstów – Meta potrafi automatycznie zmieniać nagłówki i CTA. Wyłącz je ręcznie w sekcji „Ulepszenia reklamy” na poziomie zestawu reklam.</p>
+
+                <h4 class="text-xl font-semibold mt-6 mb-3">Campaign Budget Optimization (CBO)</h4>
+                <p class="mb-2 text-gray-700">✅ <strong>Zalety:</strong> Automatyczne przenoszenie budżetu tam, gdzie są najlepsze wyniki. Dobre przy dużych budżetach i jednorodnych grupach.</p>
+                <p class="mb-2 text-gray-700">❌ <strong>Nie stosuj CBO,</strong> gdy zestawy reklam mają bardzo różne wielkości grup docelowych (np. 1 mln vs 300 tys.). Większa grupa "zje" budżet, nawet jeśli konwertuje gorzej.</p>
+
+                <h4 class="text-xl font-semibold mt-6 mb-3">Optymalizacja pod konwersje</h4>
+                <p class="mb-4 text-gray-700">Aby Meta mogła się „nauczyć”, zestaw reklam powinien uzyskiwać min. 50 konwersji tygodniowo. Jeśli nie masz tylu konwersji <code>Purchase</code>, zacznij od mikrokonwersji, np. <code>Add to Cart</code>, <code>Initiate Checkout</code> lub <code>View Content</code>. 📌 Nie ustawiaj optymalizacji na konwersję, która zdarza się raz na tydzień.</p>
+                
+                <h4 class="text-xl font-semibold mt-6 mb-3">Bezpieczeństwo marki i wykluczanie wydawców</h4>
+                <p class="mb-2 text-gray-700">Kontroluj, gdzie wyświetlają się Twoje reklamy. W <code>Menedżerze firmy → Bezpieczeństwo marki</code> możesz stworzyć listy wykluczonych wydawców (np. aplikacje z grami, portale clickbaitowe) i wybrać poziom filtrowania treści. Robimy to, aby zabezpieczyć wizerunek marki.</p>
+
+                 <h4 class="text-xl font-semibold mt-6 mb-3">Inne wskazówki:</h4>
+                <ul class="sub-list">
+                    <li><strong>Rozdziel prospecting i remarketing</strong> – nie mieszaj różnych celów w jednej kampanii.</li>
+                    <li><strong>Sprawdzaj jakość komentarzy pod reklamami</strong> – negatywny feedback może wpływać na wyniki.</li>
+                    <li><strong>Nie bój się kampanii Advantage+</strong>, ale tylko jeśli masz spory budżet, historię konwersji i wyczyszczone źródła danych (Pixel/CAPI).</li>
+                </ul>
+            </div>
+        </section>
+
+  <!-- SEKCJA: Struktura Nazewnictwa -->
+        <section class="naming-section mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
+            <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Struktura Nazewnictwa i Tagowanie Linków</h2>
+            <p class="mb-6 text-gray-600">Spójne nazewnictwo to fundament porządku. Umożliwia szybką analizę, filtrowanie i raportowanie. Poniżej znajduje się obowiązujący w agencji standard dla kampanii i linków UTM.</p>
+            
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Meta Ads (Facebook) - Naming Kampanii</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr class="level-header">
+                                <th colspan="5">Poziom Kampanii</th>
+                            </tr>
+                            <tr>
+                                <th>Wyróżnik Agencyjny</th>
+                                <th>Etap Lejka</th>
+                                <th>Typ Ruchu</th>
+                                <th>Rodzaj Kampanii</th>
+                                <th>Promocja/Akcja</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                             <tr>
+                                <td><code>Bee</code></td>
+                                <td class="text-lg">🟢 🟡 🔴</td>
+                                <td><code>NR / ADV+ / REM</code></td>
+                                <td><code>Traffic / Reach / Video / DPA / Conversion</code></td>
+                                <td><code>np. WinterSale_Walizki129</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="example"><strong>Przykład nazwy kampanii:</strong> <code>🟢 Bee_NR_Reach_WinterSale_Walizki129</code></div>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Google Ads - Naming Kampanii</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr class="level-header">
+                                <th colspan="4">Poziom Kampanii</th>
+                            </tr>
+                            <tr>
+                                <th>Etap Lejka</th>
+                                <th>Rodzaj Kampanii</th>
+                                <th>Typ Kampanii</th>
+                                <th>Ustawienie + Dodatkowe Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-lg">🟢 🟡 🔴</td>
+                                <td><code>Search / GDN / PMax / DG / PLA / YT</code></td>
+                                <td><code>Brand / Generic / Linia Produktów / Odbiorcy / REM</code></td>
+                                <td><code>CPC / CPA / tROAS / Cobiro / SemBot</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="legend">
+                <p><strong>Legenda kropek (Etap lejka):</strong></p>
+                <ul class="list-none mt-2 space-y-1">
+                    <li><span class="mr-2">🟢</span> - <strong>TOFU (Top of Funnel):</strong> Kampanie budujące świadomość, skierowane do szerokiej publiczności.</li>
+                    <li><span class="mr-2">🟡</span> - <strong>MOFU (Middle of Funnel):</strong> Kampanie angażujące użytkowników, którzy mieli już kontakt z marką.</li>
+                    <li><span class="mr-2">🔴</span> - <strong>BOFU (Bottom of Funnel):</strong> Kampanie remarketingowe i konwersyjne, skierowane do najcieplejszych odbiorców.</li>
+                </ul>
+            </div>
+            
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Tagowanie Linków UTM</h3>
+                <p class="mb-4 text-gray-700">Parametry UTM (Urchin Tracking Module) to fragmenty tekstu dodawane do adresu URL, które pozwalają Google Analytics (i innym narzędziom) precyzyjnie śledzić, skąd pochodzi ruch. Dzięki nim wiemy dokładnie, która kampania, post czy reklama przyniosła użytkownika na naszą stronę. Poprawne tagowanie jest kluczowe dla mierzenia efektywności działań organicznych i płatnych poza Google Ads.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr class="level-header">
+                                <th colspan="3">Struktura UTM</th>
+                            </tr>
+                            <tr>
+                                <th>Source</th>
+                                <th>Medium</th>
+                                <th>Campaign</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th rowspan="3" class="align-top">meta</th><td>cpc</td><td>szablon</td></tr>
+                            <tr><td>organic</td><td>post_data</td></tr>
+                            <tr><td>reels</td><td>reels_data</td></tr>
+
+                            <tr><th rowspan="2" class="align-top">pinterest</th><td>cpc</td><td>target_wyroznik</td></tr>
+                            <tr><td>organic</td><td>post_data_wyroznik</td></tr>
+
+                            <tr><th rowspan="2" class="align-top">tiktok</th><td>cpc</td><td>target_wyroznik</td></tr>
+                            <tr><td>organic</td><td>post_data_wyroznik</td></tr>
+
+                            <tr><th rowspan="2" class="align-top">linkedin</th><td>cpc</td><td>target_wyroznik</td></tr>
+                            <tr><td>organic</td><td>post_data_wyroznik</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+    
+        <!-- Sekcja: Inne narzędzia, z których korzystamy i które ułatwiają nam pracę -->
         <section class="mb-12 p-6 border border-gray-200 rounded-lg bg-gray-50">
             <h2 class="text-3xl font-semibold text-[#6c36fe] mb-6 pb-2 border-b-2 border-gray-200">Narzędzia wykorzystywane w Beeffective</h2>
             <div class="overflow-x-auto">
