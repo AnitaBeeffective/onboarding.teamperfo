@@ -166,6 +166,96 @@
             <p class="mt-4 text-lg md:text-xl text-gray-600">Oto kilka informacji o #teamperfo, które musisz wiedzieć na start.</p>
         </header>
 
+        <!-- Sekcja: Statusy Zespołu -->
+        <section class="section-card">
+            <h2 class="section-title">Cotygodniowe statusy zespołu</h2>
+            <div class="space-y-4 text-gray-700">
+                <p>W każdy poniedziałek o 12:00 spotykamy się na wewnętrznym statusie zespołu performance. To czas, kiedy omawiamy kluczowe tematy dotyczące klientów, planujemy działania na nadchodzący tydzień, dzielimy się ważnymi update’ami i ewentualnymi wątkami do eskalacji.</p>
+                <p>Notatka z każdego spotkania trafia tutaj:<br>
+                    <a href="https://docs.google.com/spreadsheets/d/1EYdCw99LroJtpLuzScVelos3YdLWRZvCWCVHR3Bu_4Q/edit?gid=302463316#gid=302463316" target="_blank" rel="noopener noreferrer" class="text-brand-purple font-semibold hover:underline">Status zespołu – dokument</a>
+                </p>
+                 <div class="p-4 bg-blue-100 border-l-4 border-blue-400 rounded-r-lg">
+                     <p class="font-bold">Pro tip:</p>
+                     <p>Przed spotkaniem warto rzucić okiem na swój zakres klientów i przygotować:</p>
+                     <ul class="list-disc list-inside mt-2 ml-4">
+                         <li>szybkie podsumowanie działań/zadań,</li>
+                         <li>tematy wymagające decyzji lub wsparcia zespołu,</li>
+                         <li>ewentualne wąskie gardła (np. czekamy na coś od klienta).</li>
+                     </ul>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Sekcja: Media Plan -->
+        <section class="section-card">
+            <h2 class="section-title">Media Plan</h2>
+            <div class="space-y-4 text-gray-700">
+                <p>Na etapie ofertowania (czyli przed startem współpracy lub przy rozbudowie działań u obecnego klienta) przygotowujemy media plan – to dokument pokazujący proponowany podział budżetu reklamowego, kanały i estymację wyników.</p>
+                <p>Wzór media planu znajdziesz tutaj:<br>
+                    <a href="https://docs.google.com/spreadsheets/d/1h1Ny4MPW-4w0blxwEAiHfchjGDo097ygUaAa07cTJIY/edit?gid=1392394452#gid=1392394452" target="_blank" rel="noopener noreferrer" class="text-brand-purple font-semibold hover:underline">Media Plan – szablon</a>
+                </p>
+                <div class="p-4 bg-yellow-100 border-l-4 border-yellow-400 rounded-r-lg">
+                    <p class="font-bold">Uwaga!</p>
+                    <p>To jest wzór, a nie sztywna formatka. Media plan przygotowany dla klienta nie musi zawierać wszystkich danych z szablonu. Dostosuj zawartość do:</p>
+                    <ul class="list-disc list-inside mt-2 ml-4">
+                        <li>branży,</li>
+                        <li>budżetu,</li>
+                        <li>poziomu zaawansowania kampanii,</li>
+                        <li>etapu współpracy (oferta / rozszerzenie działań / benchmarkowanie itp.).</li>
+                    </ul>
+                </div>
+                <p>Celem media planu jest czytelne przedstawienie strategii i uzasadnienie budżetu – forma może być elastyczna, ale logika i liczby muszą się spinać.</p>
+            </div>
+        </section>
+
+        <!-- NOWA SEKCJA: Urlopy -->
+        <section class="section-card">
+            <h2 class="section-title">🏖️ Urlopy – zasady i dobre praktyki</h2>
+            <p class="mb-4 text-gray-700">Planujesz urlop? Super – odpoczynek jest ważny. Ale zanim wylogujesz się ze Slacka i odinstalujesz Gmaila, pamiętaj o kilku zasadach, które ułatwiają pracę zespołowi, kiedy Cię nie ma.</p>
+
+            <h3 class="text-xl font-bold mb-4 text-gray-800">✅ Co musisz zrobić przed urlopem?</h3>
+
+            <div class="space-y-6 text-gray-700">
+                <div>
+                    <h4 class="font-semibold text-lg text-gray-800">Wyślij mailowo notatkę urlopową</h4>
+                    <ul class="list-disc list-inside pl-4 mt-2 space-y-1">
+                        <li><strong>Temat np:</strong> Notatka urlopowa | Imię | daty nieobecności</li>
+                        <li><strong>W treści wskaż:</strong>
+                            <ul class="list-circle list-inside pl-6 mt-1">
+                                <li>kto zastępuje Cię przy każdym projekcie,</li>
+                                <li>czy są jakieś szczególne tematy do przejęcia / przypilnowania.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="mt-3">
+                        📎 Listę zastępstw znajdziesz tutaj: <br>
+                        <a href="https://docs.google.com/spreadsheets/d/1EYdCw99LroJtpLuzScVelos3YdLWRZvCWCVHR3Bu_4Q/edit?gid=1188225258#gid=1188225258" target="_blank" rel="noopener noreferrer" class="text-brand-purple font-semibold hover:underline">👉 Zastępstwa urlopowe – dokument</a>
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg text-gray-800">Zaplanuj wszystko, co możesz z wyprzedzeniem</h4>
+                    <ul class="list-disc list-inside pl-4 mt-2 space-y-1">
+                        <li>Zrób porządki w kampaniach, żeby nie zostawiać bałaganu.</li>
+                        <li>Ustaw harmonogramy reklam, jeśli kampania ma działać w trakcie Twojej nieobecności.</li>
+                        <li>Przypilnuj budżetów, kreacji, rozszerzeń – lepiej dopiąć to wcześniej niż przez telefon z plaży ☀️</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg text-gray-800">Nie zostawiaj zespołowi nadmiaru pracy</h4>
+                    <ul class="list-disc list-inside pl-4 mt-2 space-y-1">
+                        <li>Ogranicz zadania, które trzeba będzie „gasić” w Twoim imieniu.</li>
+                        <li>Przekaż wszystkie informacje jasno, konkretnie, bez niedomówień.</li>
+                    </ul>
+                </div>
+
+                <div class="p-4 bg-blue-100 border-l-4 border-blue-400 rounded-r-lg">
+                    <p><strong class="text-blue-800">💡 Dobra praktyka:</strong> Dobrze przygotowany urlop = spokojniejszy powrót i mniej chaosu w zespole.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Sekcja: Analityka - lista TO DO -->
         <section class="section-card checklist-section">
             <h2 class="section-title">Analityka - lista TO DO</h2>
@@ -219,8 +309,8 @@
                 <h3 class="text-xl font-bold mb-3">Część 2: Google Ads</h3>
                 <p class="mb-4 text-gray-700">Proces w Google Ads jest bardziej złożony.</p>
                  <div class="bg-[#ffeb03] border-2 border-black rounded-lg p-4 mb-4">
-                    <strong class="text-[#6c36fe]">ZASADA NR 1:</strong> NIGDY nie dodawaj po prostu nowej karty do istniejącego profilu płatności klienta. Faktura i tak zostanie wystawiona na właściciela tego profilu.
-                </div>
+                     <strong class="text-[#6c36fe]">ZASADA NR 1:</strong> NIGDY nie dodawaj po prostu nowej karty do istniejącego profilu płatności klienta. Faktura i tak zostanie wystawiona na właściciela tego profilu.
+                 </div>
             </div>
         </section>
 
@@ -254,7 +344,7 @@
                 <h4>Wykluczenie brandu – dokładnie i skutecznie</h4>
                 <p class="mb-4 text-gray-700">Jeśli masz osobną kampanię na brand, wyklucz brand z pozostałych kampanii, aby nie zaburzać wyników innych kampanii i nie przepłacać za ruch, który i tak przyjdzie dzięki kampanii brandowej.</p>
                 <p class="font-bold text-gray-600">Co dokładnie wykluczyć:</p>
-                <ul>
+                <ul class="sub-list">
                     <li><code>[nazwa firmy]</code> – dopasowanie ścisłe</li>
                     <li><code>"nazwa firmy"</code> – dopasowanie do wyrażenia</li>
                     <li>Różne warianty i literówki</li>
@@ -268,7 +358,7 @@
                 <h4>Zasoby reklam – zawsze kompletne</h4>
                 <p class="mb-4 text-gray-700">Zawsze wypełniaj wszystkie możliwe zasoby reklamowe, ponieważ Google wykorzystuje je do dynamicznych kombinacji, a reklamy z pełnym zestawem mają wyższy Ad Strength i zasięg. 📌 Pamiętaj też, że warto testować różne warianty – sprzedażowe, informacyjne, emocjonalne.</p>
                 <p class="font-bold text-gray-600">Co trzeba uzupełnić:</p>
-                <ul>
+                <ul class="sub-list">
                     <li><strong>Nagłówki:</strong> min. 5, najlepiej 8–10 (różnorodne, bez powtórzeń).</li>
                     <li><strong>Teksty reklamy (opisowe):</strong> min. 2, najlepiej 4.</li>
                     <li><strong>Końcowy URL:</strong> dokładna podstrona, nie zawsze strona główna.</li>
@@ -534,7 +624,7 @@
             </dl>
         </section>
 
-        <!-- NOWA SEKCJA: INSTRUKCJA NADAWANIA DOSTĘPÓW -->
+        <!-- SEKCJA: INSTRUKCJA NADAWANIA DOSTĘPÓW -->
         <section class="section-card">
              <h2 class="section-title">Instrukcja nadawania dostępów (info do Klientów)</h2>
              <div class="space-y-4">
